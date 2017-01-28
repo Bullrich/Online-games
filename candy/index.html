@@ -5,9 +5,10 @@
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Unity WebGL Player | Candy</title>
-<script type="text/javascript" src="https://code.createjs.com/tweenjs-0.6.0.min.js"></script>
-<script type="text/javascript" src="TemplateData/CSSPlugin.js"></script>
+    <script type="text/javascript" src="https://code.createjs.com/tweenjs-0.6.0.min.js"></script>
+    <script type="text/javascript" src="TemplateData/CSSPlugin.js"></script>
     <link rel="stylesheet" href="TemplateData/style.css">
+    <link rel="stylesheet" href="TemplateData/loading.css">
     <link rel="shortcut icon" href="TemplateData/favicon.ico" />
     <script src="TemplateData/UnityProgress.js"></script>
 </head>
@@ -19,10 +20,31 @@
     <div id="bgBar"></div>
     <div id="progressBar"></div>
     <img id="spinner" src="TemplateData/spinner.gif" style="display: none; margin: 0 auto" />
-    <p id="loadingInfo">Loading...</p>
+<div class="loader">
+	<div class="loader-inner">
+		<div class="loader-line-wrap">
+			<div class="loader-line"></div>
+		</div>
+		<div class="loader-line-wrap">
+			<div class="loader-line"></div>
+		</div>
+		<div class="loader-line-wrap">
+			<div class="loader-line"></div>
+		</div>
+		<div class="loader-line-wrap">
+			<div class="loader-line"></div>
+		</div>
+		<div class="loader-line-wrap">
+			<div class="loader-line"></div>
+		</div>
+	</div>
+</div>
+<p id="loadingInfo">Loading...</p>
 </div>
 <br>
-<a href="http://bullrich.github.io" target="_blank"><div class="logo"></div></a>
+<a href="http://bullrich.github.io" target="_blank">
+    <div class="logo"></div>
+</a>
 <div class="fullscreen">
     <img src="TemplateData/fullscreen.png" width="38" height="38" alt="Fullscreen" title="Fullscreen" onclick="SetFullscreen(1);" /></div>
 <div class="title">Candy</div>
